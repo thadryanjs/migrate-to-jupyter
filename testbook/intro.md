@@ -1,3 +1,2 @@
-# Welcome to your Jupyter Book
-
-This is my intro now!
+# A noble quest
+...for interactive tables in Julia compiled to a book

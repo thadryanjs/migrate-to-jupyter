@@ -312,94 +312,23 @@
 <p>A package called <a class="reference external" href="https://github.com/mwouts/itables">itables</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;cups_of_coffee&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
     <span class="s1">&#39;productivity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">})</span>
 <span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>6</th>
-      <th>7</th>
-      <th>8</th>
-      <th>9</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>cups_of_coffee</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>productivity</th>
-      <td>2</td>
-      <td>5</td>
-      <td>6</td>
-      <td>8</td>
-      <td>9</td>
-      <td>8</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>-1</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itables</span> 
 <span class="n">itables</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="aea17528-a500-42cb-9068-d0114fa89afc" class="display"style="max-width:100%"><thead><th>cups_of_coffee</th><th>productivity</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="6e4aa7d6-d4bc-471d-8682-c94055cdbb86" class="display"style="max-width:100%"><thead><th>cups_of_coffee</th><th>productivity</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -429,7 +358,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#aea17528-a500-42cb-9068-d0114fa89afc').DataTable(dt_args);
+            $('#6e4aa7d6-d4bc-471d-8682-c94055cdbb86').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -439,7 +368,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#aea17528-a500-42cb-9068-d0114fa89afc').DataTable(dt_args);
+                    $('#6e4aa7d6-d4bc-471d-8682-c94055cdbb86').DataTable(dt_args);
                 });
             }
         )

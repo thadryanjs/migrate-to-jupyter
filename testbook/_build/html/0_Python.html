@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="More Python" href="1_Python-again.html" />
+    <link rel="next" title="R" href="1_R.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -74,11 +74,6 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">My sample book</h1>
@@ -103,23 +98,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="1_Python-again.html">
-   More Python
+  <a class="reference internal" href="1_R.html">
+   R
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="2_Julia.html">
    Julia
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="3_Python-and-R.html">
-   Mixed Python and R
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="4_R.html">
-   R (designated)
   </a>
  </li>
 </ul>
@@ -221,19 +206,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#here-is-the-second-section-of-this-chapter">
-   Here is the second section of this chapter!
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -246,19 +218,6 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#here-is-the-second-section-of-this-chapter">
-   Here is the second section of this chapter!
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -267,40 +226,73 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="python">
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
-<p>Thadryan has done the stuff in here!</p>
+<p>This is readily achieved with <code class="docutils literal notranslate"><span class="pre">itables</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example from the docs</span>
+<span class="kn">import</span> <span class="nn">itables</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;cups_of_coffee&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="s1">&#39;productivity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+
+<span class="n">itables</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="here-is-the-second-section-of-this-chapter">
-<h2>Here is the second section of this chapter!<a class="headerlink" href="#here-is-the-second-section-of-this-chapter" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the second thing&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Here is the second thing
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">9000</span>
-</pre></div>
-</div>
-</div>
-</div>
+<div class="output text_html"><table id="e6950ba5-bb36-44fa-be19-5bac69d5a7c5" class="display"style="max-width:100%"><thead><th>cups_of_coffee</th><th>productivity</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<style> table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+} </style>
+<style> table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+} </style>
+<script type="module">
+    // Define the table data
+    const data = [[0, 2], [1, 5], [2, 6], [3, 8], [4, 9], [5, 8], [6, 0], [7, 1], [8, 0], [9, -1]];
+
+    if (typeof require === 'undefined') {
+        // TODO: This should become the default (use a simple import)
+        // when the ESM version works independently of whether
+        // require.js is there or not, see
+        // https://datatables.net/forums/discussion/69066/esm-es6-module-support?
+        const {default: $} = await import("https://esm.sh/jquery@3.5.0");
+        const {default: initDataTables} = await import("https://esm.sh/datatables.net@1.11.3?deps=jquery@3.5.0");
+
+        initDataTables();
+
+        // Define the dt_args
+        let dt_args = {"columnDefs": [{"width": "70px", "targets": "_all"}], "paging": false};
+        dt_args["data"] = data;
+
+        // Display the table
+        $(document).ready(function () {
+            $('#e6950ba5-bb36-44fa-be19-5bac69d5a7c5').DataTable(dt_args);
+        });
+    } else {
+        require(["jquery", "datatables"], ($, datatables) => {
+                // Define the dt_args
+                let dt_args = {"columnDefs": [{"width": "70px", "targets": "_all"}], "paging": false};
+                dt_args["data"] = data;
+
+                // Display the table
+                $(document).ready(function () {
+                    $('#e6950ba5-bb36-44fa-be19-5bac69d5a7c5').DataTable(dt_args);
+                });
+            }
+        )
+    }
+</script>
+</div></div>
 </div>
 </div>
 
@@ -336,10 +328,10 @@
             <p class="prev-next-title">Welcome to your Jupyter Book</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="1_Python-again.html" title="next page">
+    <a class='right-next' id="next-link" href="1_R.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">More Python</p>
+        <p class="prev-next-title">R</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

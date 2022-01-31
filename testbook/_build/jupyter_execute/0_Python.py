@@ -3,24 +3,28 @@
 
 # # Python
 # 
-# Thadryan has done the stuff in here!
+# This is readily achieved with `itables`.
 
 # In[1]:
 
 
-print("Hello World")
+# example from the docs
+import itables 
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame({
+    'cups_of_coffee': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    'productivity': [2, 5, 6, 8, 9, 8, 0, 1, 0, -1]
+})
+df.transpose()
 
 
-# ## Here is the second section of this chapter!
-
-# In[2]:
+itables.show(df)
 
 
-print("Here is the second thing")
+# In[ ]:
 
 
-# In[3]:
 
-
-x = 9000
 

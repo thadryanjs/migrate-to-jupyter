@@ -9,10 +9,10 @@ jupyterlab = "*"
 rpy2 = "*"
 numpy = "*"
 pandas = "*"
-jupyter-datatables = "*"
 jupyter-lsp = "*"
 itables = "*"
 julia = "*"
+webio-jupyter-extension = "*"
 
 [dev-packages]
 
