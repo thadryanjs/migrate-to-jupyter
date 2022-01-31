@@ -12,6 +12,7 @@ pandas = "*"
 jupyter-datatables = "*"
 jupyter-lsp = "*"
 itables = "*"
+julia = "*"
 
 [dev-packages]
 

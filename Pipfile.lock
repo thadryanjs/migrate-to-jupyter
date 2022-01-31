@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7418d5ce68896f5f268a325686a5ce0acb03757f9bb8832abcd84a61c08e5719"
+            "sha256": "266bfcfab0e1d29fb75f105f5a995f143b45bfb07d729755b966e7ac00a32d27"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -453,6 +453,14 @@
                 "sha256:c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"
             ],
             "version": "==3.2.0"
+        },
+        "julia": {
+            "hashes": [
+                "sha256:d30019cac7332e08f4670730e10e473727c4a0a63a9a2f9e2ba77fa6beafcac5",
+                "sha256:f24b9788f3e30f33d53fc8854f2fcc54193c84412149cfbc652bde2edd6e8a85"
+            ],
+            "index": "pypi",
+            "version": "==0.5.7"
         },
         "jupyter-book": {
             "hashes": [
@@ -990,11 +998,11 @@
         },
         "prometheus-client": {
             "hashes": [
-                "sha256:3fdc6fc5b03a9eaee44d015e2913b496864b9ad6557013f23e28f926d7b62913",
-                "sha256:70782d19ea1a3aeb8523aa07780dbee6a595e566198ab4ed7fdc32b53b5fa1d1"
+                "sha256:357a447fd2359b0a1d2e9b311a0c5778c330cfbe186d880ad5a6b39884652316",
+                "sha256:ada41b891b79fca5638bd5cfe149efa86512eaa55987893becd2c6d8d0a5dfc5"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==0.13.0"
+            "version": "==0.13.1"
         },
         "prompt-toolkit": {
             "hashes": [
