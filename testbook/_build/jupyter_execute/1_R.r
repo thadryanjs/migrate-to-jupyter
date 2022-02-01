@@ -1,5 +1,3 @@
 library(DT)
 
 datatable(mtcars)
-
-

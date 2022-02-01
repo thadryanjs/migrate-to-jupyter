@@ -1,0 +1,11 @@
+name = "MigrateToJupyter"
+uuid = "85b323f8-43ec-4077-a412-0c1fcecb54c2"
+authors = ["Thadryan <thadryan@protonmail.com>"]
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
+RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
+TableView = "40c74d1a-b44c-5b06-a7c1-6cbea58ea978"
+WebIO = "0f1e0344-ec1d-5b48-a673-e5cf874b6c29"

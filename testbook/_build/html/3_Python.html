@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A noble quest &#8212; My sample book</title>
+    <title>Python &#8212; My sample book</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,7 +51,6 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A Noble Quest for Interactive Tables in a Compiled Julia Book" href="0_WhatIveTriedWithJulia.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -84,26 +83,16 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    A noble quest
   </a>
  </li>
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="0_WhatIveTriedWithJulia.html">
-   A Noble Quest for Interactive Tables in a Compiled Julia Book
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="1_R.html">
    R
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2_Python.html">
-   Python
   </a>
  </li>
 </ul>
@@ -147,9 +136,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/3_Python.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -167,7 +156,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_Python.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -183,6 +172,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/3_Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -195,7 +201,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A noble quest</h1>
+                <h1>Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -206,10 +212,75 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="a-noble-quest">
-<h1>A noble quest<a class="headerlink" href="#a-noble-quest" title="Permalink to this headline">¶</a></h1>
-<p>…for interactive tables in Julia compiled to a book</p>
-<div class="toctree-wrapper compound">
+  <div class="tex2jax_ignore mathjax_ignore section" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p>This is readily achieved with <code class="docutils literal notranslate"><span class="pre">itables</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example from the docs</span>
+<span class="kn">import</span> <span class="nn">itables</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;cups_of_coffee&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="s1">&#39;productivity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+
+<span class="n">itables</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table id="def47d84-106a-41ea-8707-72865a23687f" class="display"style="max-width:100%"><thead><th>cups_of_coffee</th><th>productivity</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<style> table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+} </style>
+<style> table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+} </style>
+<script type="module">
+    // Define the table data
+    const data = [[0, 2], [1, 5], [2, 6], [3, 8], [4, 9], [5, 8], [6, 0], [7, 1], [8, 0], [9, -1]];
+
+    if (typeof require === 'undefined') {
+        // TODO: This should become the default (use a simple import)
+        // when the ESM version works independently of whether
+        // require.js is there or not, see
+        // https://datatables.net/forums/discussion/69066/esm-es6-module-support?
+        const {default: $} = await import("https://esm.sh/jquery@3.5.0");
+        const {default: initDataTables} = await import("https://esm.sh/datatables.net@1.11.3?deps=jquery@3.5.0");
+
+        initDataTables();
+
+        // Define the dt_args
+        let dt_args = {"columnDefs": [{"width": "70px", "targets": "_all"}], "paging": false};
+        dt_args["data"] = data;
+
+        // Display the table
+        $(document).ready(function () {
+            $('#def47d84-106a-41ea-8707-72865a23687f').DataTable(dt_args);
+        });
+    } else {
+        require(["jquery", "datatables"], ($, datatables) => {
+                // Define the dt_args
+                let dt_args = {"columnDefs": [{"width": "70px", "targets": "_all"}], "paging": false};
+                dt_args["data"] = data;
+
+                // Display the table
+                $(document).ready(function () {
+                    $('#def47d84-106a-41ea-8707-72865a23687f').DataTable(dt_args);
+                });
+            }
+        )
+    }
+</script>
+</div></div>
 </div>
 </div>
 
@@ -238,13 +309,6 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="0_WhatIveTriedWithJulia.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">A Noble Quest for Interactive Tables in a Compiled Julia Book</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             
         </div>

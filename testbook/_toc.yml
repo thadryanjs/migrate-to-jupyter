@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: 0_Python
+- file: 0_WhatIveTriedWithJulia
 - file: 1_R
-- file: 2_Julia
+- file: 2_Python
